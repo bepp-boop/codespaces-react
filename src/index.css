@@ -108,3 +108,37 @@ http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html
                  0 0 10px rgba(157,208,154,.3);
   }
 }
+
+.text {
+  position: relative;
+  display: inline-block;
+  line-height: 24px;
+}
+
+.text:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+
+  display: inline-block;
+  background-color: #606060;
+  vertical-align: top;
+  width: 10px;
+  height: 24px;
+ 
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}

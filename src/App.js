@@ -20,7 +20,7 @@ function App() {
       <h1 class="glow">
         Enter the password
       </h1>
-      <input type="password" value={input} onChange={e => setInput(e.target.value)} />
+      <input class="text" type="text" value={input} onChange={e => setInput(e.target.value)} />
       <button onClick={checkPassword}>Check</button>
       {display && <h1 class="glow">File Downloaded</h1>}
       {!display && 
