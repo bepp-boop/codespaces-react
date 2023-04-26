@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const [input,setInput] = useState('');
-  const rightPassword = "123"
+  const rightPassword = "dreamland"
   const [display, setDisplay] = useState(false)
   
   const checkPassword = () => {
